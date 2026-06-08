@@ -1,4 +1,4 @@
-# Nall-e
+# Pomodorox
 The project is about a circuit that detects movement. It shows a easy system you can use in your life. 
 
 ### ¿How I use it?
@@ -14,8 +14,6 @@ The other topic you read is about the circuit system.
 - 1 resistor
 - 1 led
 - 1 Ultrasonic distance sensor
-- 1 Piezo
-- 11 wires
 -  1 IR sensor
 -  1 IR remote
 ## Schematic ##
