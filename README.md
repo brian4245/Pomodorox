@@ -12,5 +12,6 @@ It´s very easy to use, the only thing that you do is press the red button in th
 -  1 IR sensor
 -  1 IR remote
 ## Schematic ##
+![image alt](https://github.com/brian4245/Pomodorox/blob/78f34b7c5a06dd28907c09dd0d82df8b5d0ea1a8/SCHEMATICCIRCUIT.png)
 
 
