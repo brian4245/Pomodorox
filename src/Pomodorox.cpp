@@ -206,7 +206,7 @@ void descanso(){
 void start(){
   yasepuede = true;
   ultrasonico(); // Ejecutamos la lectura real del sensor antes de evaluar
-  if (distance <= 10 && distance > 0){ 
+  if (distance <= 100 && distance > 0){ 
     digitalWrite(bocina, HIGH);
     lcd.setCursor(0,0);
     lcd.print("EMPEZEMOS");
