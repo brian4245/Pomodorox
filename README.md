@@ -32,7 +32,9 @@ I use a function to become the code more versatil. Oh, before it you need placed
 ```C++
 pinMode(trigpin, OUTPUT);
 pinMode(echopin, INPUT);
+```
 Variables:
+```C++
 int trigpin = 4;
 int echopin = 5;
 ```
