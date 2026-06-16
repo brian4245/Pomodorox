@@ -28,7 +28,7 @@ void ultrasonico(){
   Serial.println(distance);
 }
 ```
-I use a function to become the code more versatil. Oh, before it you need placed the pins at setup, like this:
+I use a function to become the code more versatil. Oh, before it you need to place the pins at setup, like this:
 ```C++
 pinMode(trigpin, OUTPUT);
 pinMode(echopin, INPUT);
@@ -63,6 +63,67 @@ Well I declared " int IRcode = 0 " to avoid some mistkae with the control at the
     yasepuede = true; <= this one is for the POMODORO can understand that you are ready.
   }
 ```
+Well, after it you need to configure the code for the chronometer, this step is very crucial because you need it to do working the POMODORO
+
+Well, this code I used for the chronometer in the focus time.
+```C++
+void reloj(){
+  lcd.setCursor(0, 0);
+  lcd.print("POMODORO");
+  lcd.setCursor(0, 1);
+  
+  if (MINUTOS < 10) lcd.print("0"); 
+  lcd.print(MINUTOS);
+  lcd.print(":");
+  if (SEGUNDOS < 10) lcd.print("0"); 
+  lcd.print(SEGUNDOS);
+  
+  cronometrofocus = true;
+}
+```
+ Within that code I placed the boolean variable "cronometrofocus" it is in charge to do works the chronometer in reality.
+```C++
+  // 5. CRONÓMETROS 
+  if (cronometrofocus == true){
+    if (millis() - tiempoinicio >= 1000){
+      tiempoinicio = millis();
+      SEGUNDOS++;
+      if (SEGUNDOS == 60){
+        SEGUNDOS = 0;
+        MINUTOS++;
+      }
+    }
+  }
+  
+  if (cronometrodespeje == true){
+    if (millis() - tiempoiniciodescanso >= 1000){
+      tiempoiniciodescanso = millis();
+      SEGUNDOSD++;
+      if (SEGUNDOSD == 60){
+        SEGUNDOSD = 0;
+        MINUTOSD++;
+      }
+    }
+  }
+```
+Well at that code chronometer that I use, because they have a similar system to work the only thing that changes is the variables.
+Well and the function for the break works in a similar way like the function for the focus time.
+```C++
+void descanso(){
+  lcd.setCursor(9, 0);
+  lcd.print("DESCANSO");
+  lcd.setCursor(9, 1);
+  if (MINUTOSD < 10) lcd.print("0"); 
+  lcd.print(MINUTOSD);
+  lcd.print(":");
+  if (SEGUNDOSD < 10) lcd.print("0"); 
+  lcd.print(SEGUNDOSD);
+  
+  cronometrodespeje = true;
+}
+
+```
+The only thing that change is the place where the message is locate.
 
 ### ¿How I use it?
 It´s very easy to use, the only thing that you do is press the red button in the IR remote control when you are near (1m) to pomodorox. After it, the scren give you some instructions to continue the pomodoro (the button green is for continue studying and the other button green is for the break).
