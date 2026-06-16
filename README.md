@@ -15,7 +15,7 @@ void plazos(); With this one you can decides if you wanna continue with the brea
 
 Well, first you need to configure you ultrasonic distance sensor for detects the distance in a well way. I this step I use this code to configure it:
 void ultrasonico(){
-  digitalWrite(trigpin, LOW);
+  digitalWrite(trigpin, LOW);  
   delayMicroseconds(2);
   digitalWrite(trigpin, HIGH);
   delayMicroseconds(10); 
