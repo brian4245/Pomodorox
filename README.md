@@ -125,6 +125,69 @@ void descanso(){
 ```
 The only thing that change is the place where the message is locate.
 
+Well, the another function works when you press the red button:
+```C++
+void start(){
+  yasepuede = true;
+  ultrasonico(); // Ejecutamos la lectura real del sensor antes de evaluar
+  if (distance <= 100 && distance > 0){ 
+    digitalWrite(bocina, HIGH);
+    lcd.setCursor(0,0);
+    lcd.print("EMPEZEMOS");
+    delay(1000);
+    lcd.clear();
+    lcd.print("LET'S MOVE ON");
+    delay(1000);
+    lcd.clear();
+    digitalWrite(bocina, LOW);
+  }
+}
+```
+I placed the boolean variable to controle the if the clock is able to works or maybe no.
+
+Then in the same place I placed the control for the distance, it controls if you are near or far to the POMODORO. Well I named the LED as "bocina". because at first I was thinking use an Piezo, but after thinking well I realized that is better use a LED, because it is less anoying. 
+
+Well, I use some boolean variables to control the functions in a better way:
+```C++
+  if (startcontrol == true){
+    start();
+    startcontrol = false;
+  }
+  
+  if (RELOJ == true){
+    reloj();
+  } 
+
+  if (descansocontrol == true){
+    descanso();
+  }
+```
+I placed it at loop.
+
+Well, I used this code to control the buttons, it was more useful because it avoid that the code confuse with another delay, because at first I used delay, but it didn´t work in a well way, so is better to use millis to control a multitasking.
+```C++
+  ActualFocus = digitalRead(focus);
+  if (ActualFocus == HIGH && AnteriorFocus == LOW && yasepuede == true) {
+    reset(); // Reseteamos los tiempos justo al empezar el tramo
+    RELOJ = true;
+    descansocontrol = false;
+    cronometrodespeje = false;
+    delay(50); // Pa que no se repita
+  }
+  AnteriorFocus = ActualFocus;
+
+  ActualDespeje = digitalRead(despeje);
+  if (ActualDespeje == HIGH && AnteriorDespeje == LOW && yasepuede == true) {
+    reset(); 
+    controlplazos = false;
+    descansocontrol = true;
+    RELOJ = false;
+    cronometrofocus = false;
+    delay(50); // Pa que no se repita
+  }
+  AnteriorDespeje = ActualDespeje;
+```
+
 ### ¿How I use it?
 It´s very easy to use, the only thing that you do is press the red button in the IR remote control when you are near (1m) to pomodorox. After it, the scren give you some instructions to continue the pomodoro (the button green is for continue studying and the other button green is for the break).
 ## Materials ##
