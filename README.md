@@ -13,8 +13,9 @@ void start(); This one is to start the words that going to give you a gretting.
 void plazos(); With this one you can decides if you wanna continue with the break or with the focus time.
 
 
-Well, first you need to configure you ultrasonic distance sensor for detects the distance in a well way. I this step I use this code to configure it: \
-void ultrasonico(){ \
+Well, first you need to configure you ultrasonic distance sensor for detects the distance in a well way. I this step I use this code to configure it: 
+``` C++
+void ultrasonico(){ 
   digitalWrite(trigpin, LOW);  
   delayMicroseconds(2);
   digitalWrite(trigpin, HIGH);
@@ -25,6 +26,7 @@ void ultrasonico(){ \
   distance = duration / 58.2;
   Serial.println(distance);
 }
+```
 I use a function to become the code more versatil. Oh, before it you need placed the pins at setup, like this:
 pinMode(trigpin, OUTPUT);
   pinMode(echopin, INPUT);
