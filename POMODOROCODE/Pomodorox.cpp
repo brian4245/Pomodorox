@@ -37,12 +37,11 @@ bool yasepuede = false;
 
 LiquidCrystal_I2C lcd(0x27, 20, 4);
 //FUNCIONES :V
-void ultrasonico();
-void reset();
-void reloj();
-void descanso();
-void start();
-void plazos();
+void reset(); //This one is to reset the values of time at the pomodoro (twenty five minutes).
+void reloj(); //This another one is to start the clock pomodoro for study time.
+void descanso(); //This one is to start the break (five minutes).
+void start(); //This one is to start the words that going to give you a gretting.
+void plazos(); // With this one you can decides if you wanna continue with the break or with the focus time.
 
 void setup() {
   Serial.begin(9600);
@@ -101,20 +100,20 @@ void loop() {
   // 3. CONTROL REMOTO INFRARROJO
   int IRcode = 0; 
   if(IrReceiver.decode()){
-    IRcode = IrReceiver.decodedIRData.command; 
-    Serial.println(IRcode);
-    IrReceiver.resume();
+    IRcode = IrReceiver.decodedIRData.command; // Declared it here to avoid scope issues
+    Serial.println(IRcode); // To know the code of the buttons, you can remove it later
+    IrReceiver.resume(); // Receive the next value, if you don't call this, you won't be able to receive values anymore
   }
   
   if (IRcode == 162){
-    startcontrol = true;
-    ultrasonicocontrol = true;
-    yasepuede = true;
+    startcontrol = true; // it starts the pomodoro when you press the red button at the remote control
+    ultrasonicocontrol = true; // it allows the ultrasonic sensor to work when you press the red button at the remote control
+    yasepuede = true; // it allows the rest of the program to work when you press the red button at the remote control
   }
   
   // 4. EJECUCIÓN DE FUNCIONES DE CONTROL
   if (controlplazos == true){
-    plazos();
+    plazos(); // it shows the message to press the buttons when a pomodoro or a break ends
     controlplazos = false; // Se ejecuta una sola vez al terminar un ciclo
   }
   
