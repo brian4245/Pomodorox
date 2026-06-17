@@ -198,11 +198,17 @@ It´s very easy to use, the only thing that you do is press the red button in th
 - 1 Ultrasonic distance sensor
 -  1 IR sensor
 -  1 IR remote
+-  
+| Columna 1 | Columna 2 | Columna 3 |
+| :--- | :---: | ---: |
+| Fila 1, Dato 1 | Fila 1, Dato 2 | Fila 1, Dato 3 |
+| Fila 2, Dato 1 | Fila 2, Dato 2 | Fila 2, Dato 3 |
+
 ## Schematic ##
 ![image alt](https://github.com/brian4245/Pomodorox/blob/78f34b7c5a06dd28907c09dd0d82df8b5d0ea1a8/SCHEMATICCIRCUIT.png)
 ## BOM ##
 |ITEM|Purpose|Price|
-|-------------||---||---|
+|-------------|---|---|
 |Ultrasonic Distance Sensor|Detect the distance where you are, and it decides if you are ready to study|Owned|
 |LED(red)|It is a signal to know if the Ultrasonic sensor is on|Owned|
 |Protoboard|It is to connect the wires and do the circuit|Owned|
