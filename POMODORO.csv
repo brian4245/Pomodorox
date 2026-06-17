@@ -1,8 +1,0 @@
-"Id;""Identificador"";""Huella"";""Cantidad"";""Identificación"";""Suministrador y ref"";",
-"1;""A1"";""Arduino_UNO_R3"";1;""Arduino_Leonardo"";;;",
-"2;""D2"";""LED_WP7113ID"";1;""WP7113ID"";;;",
-"3;""DS1"";""LCD_LCD-20X4B"";1;""LCD-20X4B"";;;",
-"4;""S1"," S2"";""SW_TL3301AF160QG"";2;""TL3301AF160QG"";;;"
-"5;""U1"";""XCVR_HC-SR04"";1;""HC-SR04"";;;",
-"6;""U2"";""MODULE_CEG003400"";1;""CEG003400"";;;",
-"7;""U3"";""TSOP18XX"";1;""TSOP1838"";;;",
