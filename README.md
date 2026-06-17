@@ -202,17 +202,17 @@ It´s very easy to use, the only thing that you do is press the red button in th
 ## Schematic ##
 ![image alt](https://github.com/brian4245/Pomodorox/blob/78f34b7c5a06dd28907c09dd0d82df8b5d0ea1a8/SCHEMATICCIRCUIT.png)
 ## BOM ##
-| ITEM | Purpose | Price |
-| :---: | :---: | :---: |
-| Ultrasonic Distance Sensor | Detect the distance where you are, and it decides if you are ready to study | Owned |
-| LED(red) | It is a signal to know if the Ultrasonic sensor is on | Owned |
-| Protoboard | It is to connect the wires and do the circuit | Owned |
-| Arduino UNO | It is to control the circuit | Owned |
-| I2C LCD | It is to use with fewer pins | Owned |
-| LCD 20x4 | It is crucial to represent the chronometer POMODORO | Owned |
-| Wires | It is to connect the circuit | Owned |
-| IR remote | It is for controlling the start of the pomodoro | Owned |
-| IR sensor | It is to detect the IR remote | Owned |
+| ITEM | Purpose | Price | Source |
+| :---: | :---: | :---: | :---: |
+| Ultrasonic Distance Sensor | Detect the distance where you are, and it decides if you are ready to study | Owned |  |
+| LED(red) | It is a signal to know if the Ultrasonic sensor is on | Owned |  |
+| Protoboard | It is to connect the wires and do the circuit | Owned |   |
+| Arduino UNO | It is to control the circuit | Owned |  |
+| I2C LCD | It is to use with fewer pins | Owned |  |
+| LCD 20x4 | It is crucial to represent the chronometer POMODORO | Owned |   |
+| Wires | It is to connect the circuit | Owned |   |
+| IR remote | It is for controlling the start of the pomodoro | Owned |   |
+| IR sensor | It is to detect the IR remote | Owned |    |
 ## Magazine ##
 ![image alt](https://github.com/brian4245/Pomodorox/blob/c3ee0a976004a3a642ec7369a8749fe598ded15f/Magazine.png)
 
