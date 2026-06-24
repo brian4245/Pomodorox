@@ -5,7 +5,7 @@
 int IRD = 3;
 int trigpin = 4;
 int echopin = 5;
-int bocina = 6;
+int LEDAVISADOR = 6;
 int despeje = 8;
 int focus = 9;
 bool ActualFocus = LOW;
@@ -50,7 +50,7 @@ void setup() {
   pinMode(focus, INPUT);
   pinMode(trigpin, OUTPUT);
   pinMode(echopin, INPUT);
-  pinMode(bocina, OUTPUT); 
+  pinMode(LEDAVISADOR, OUTPUT); 
   lcd.init();
   lcd.backlight();
   lcd.clear();
@@ -206,7 +206,7 @@ void start(){
   yasepuede = true;
   ultrasonico(); // Ejecutamos la lectura real del sensor antes de evaluar
   if (distance <= 100 && distance > 0){ 
-    digitalWrite(bocina, HIGH);
+    digitalWrite(LEDAVISADOR, HIGH);
     lcd.setCursor(0,0);
     lcd.print("EMPEZEMOS");
     delay(1000);
