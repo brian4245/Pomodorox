@@ -206,15 +206,16 @@ It´s very easy to use, the only thing that you do is press the red button in th
 ## BOM ##
 | ITEM | Purpose | Price | Source |
 | :---: | :---: | :---: | :---: |
-| Ultrasonic Distance Sensor | Detect the distance where you are, and it decides if you are ready to study | Owned |  |
-| LED(red) | It is a signal to know if the Ultrasonic sensor is on | Owned |  |
-| Protoboard | It is to connect the wires and do the circuit | Owned |   |
-| Arduino UNO | It is to control the circuit | Owned |  |
-| I2C LCD | It is to use with fewer pins | Owned |  |
-| LCD 20x4 | It is crucial to represent the chronometer POMODORO | Owned |   |
-| Wires | It is to connect the circuit | Owned |   |
-| IR remote | It is for controlling the start of the pomodoro | Owned |   |
-| IR sensor | It is to detect the IR remote | Owned |    |
+| Ultrasonic Distance Sensor | Detect the distance where you are, and it decides if you are ready to study | S/ 8|  Nanoparuro |
+| LED(red) | It is a signal to know if the Ultrasonic sensor is on | S/ 1.00 | Nanoparuro |
+| Arduino UNO | It is to control the circuit | S/ 30.00 | Nanoparuro  |
+| I2C LCD | It is to use with fewer pins | S/ 7.00 | Nanoparuro  |
+| LCD 20x4 | It is crucial to represent the chronometer POMODORO | S/ 22.00 | Electromanía  |
+| IR remote | It is for controlling the start of the pomodoro | S/ 10.00 | Nanoparuro |
+| IR sensor | It is to detect the IR remote | S/ 10.00 | Nanoparuro  |
+| 2 Push Buttons | To activate the POMODORO clock | S/ 1.40 | electromanía |
+| PCB | To conncect all of the componentes in the circuit | S/ 120 | VILLACONTROL |
+
 ## Magazine ##
 ![image alt](https://github.com/brian4245/Pomodorox/blob/c3ee0a976004a3a642ec7369a8749fe598ded15f/Magazine.png)
 
