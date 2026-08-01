@@ -1,6 +1,6 @@
 # Pomodorox
 Pomodorox is a project that helps to the high school´s students for studying without distractions
-https://cad.onshape.com/documents/2d539401d5eeff7b5a051a5e/w/acb2298a33fe291c39ed5225/e/8e80be298c9f318b740c5d51?renderMode=0&uiState=6a6d26c64163ef4042c04433
+On shape: https://cad.onshape.com/documents/2d539401d5eeff7b5a051a5e/w/acb2298a33fe291c39ed5225/e/8e80be298c9f318b740c5d51?renderMode=0&uiState=6a6d26c64163ef4042c04433
 
 # Motivation
 Well, I did this project because I realized that many people try to study but many times they don´t study, and it is because I use a laptop or a smarthphone to use a technique for study, but many times these technology products give us many distractions, and the better option to use could be an analogyc product that you can use to study.
