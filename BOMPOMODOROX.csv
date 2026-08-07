@@ -1,0 +1,18 @@
+﻿ITEM,PURPOSE,PRICE,SOURCE
+Ultrasonic Distance Sensor,"Detect the distance where you are,
+ and it decides if you are ready to study", S/ 8.00 ,Nanoparuro
+LED(RED),"It is a signal to know if the Ultrasonic 
+sensor is on", S/ 1.00 ,Nanoparuro
+Arduino UNO,It is to control the circuit, S/ 30.00 ,Nanoparuro
+I2C LCD,It is to use with fewer pins, S/ 7.00 ,Nanoparuro
+LCD 20X4,"It is crucial to represent the
+ chronometer POMODORO", S/ 22.00 ,electromanía
+IR remote,"It is for controlling the start of the
+ pomodoro", S/ 10.00 ,Nanoparuro
+IR sensor,It is to detect the IR remote, S/ 10.00 ,Nanoparuro
+2 push buttons,To activate the POMODORO clock, S/ 2.00 ,electromanía
+PCB,"To connect all of the components in 
+the circuit", S/ 120.00 ,VILLACONTROL
+Assembly,"I don´t have enough time, so the market is going to help me with it", S/ 65.00 ,VILLACONTROL
+,TOTAL:, S/ 275.00 ,
+,TOTAL & IGV:, S/ 324.50 ,
